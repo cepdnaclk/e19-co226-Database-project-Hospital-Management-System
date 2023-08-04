@@ -1,0 +1,11 @@
+/* .loginPage styles remain the same */
+.loginPage {
+    background: url('images/loginBackground.jpg');
+    background-size: cover;
+  }
+  
+  /* Update .loginForm styles to use a pseudo-element */
+  .loginForm {
+    background-color: rgba(85, 207, 226, 0.794);
+    color: white;
+  }

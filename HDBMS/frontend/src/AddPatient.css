@@ -1,0 +1,9 @@
+.add-patient-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  

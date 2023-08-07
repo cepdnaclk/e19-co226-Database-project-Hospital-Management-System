@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './search.css';
 
 function SearchPatient() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -8,10 +9,10 @@ function SearchPatient() {
 
   const handleSearch = () => {
     axios
-      .get(`http://localhost:8081/searchPatient?query=${searchQuery}`)
+    .post(`http://localhost:8081/searchPatient`, { searchCriteria: searchQuery })
       .then((response) => {
-        if (response.data.Status === 'success') {
-          setPatients(response.data.patients);
+        if (response.data.Status === 'Success') {
+          setPatients(response.data.Patients);
           setError('');
         } else {
           setPatients([]);
@@ -30,25 +31,35 @@ function SearchPatient() {
       <div className="search-form">
         <input
           type="text"
-          placeholder="Enter patient name or ID"
+          placeholder="Enter patient ID"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
         <button onClick={handleSearch}>Search</button>
-      </div>
+        </div>
       {error && <div className="error-message">{error}</div>}
-      <div className="search-results">
-        {patients.map((patient) => (
-          <div key={patient.P_ID}>
+      {patients.length > 0 && (
+        <div className="search-results">
+          {patients.map((patient) => (
+            <div key={patient.P_ID}>
             <p>Patient ID: {patient.P_ID}</p>
             <p>Name: {patient.Name}</p>
+            <p>Gender: {patient.Gender}</p>
+            <p>ContactNumber: {patient.ContactNumber}</p>
+            <p>Adress: {patient.Adress}</p>
+            <p>Email: {patient.Email}</p>
+            <p>Ward Number: {patient.W_number}</p>
+            <p>Resp Number: {patient.REP_ID}</p>
             {/* Add other patient details here */}
             <hr />
           </div>
         ))}
       </div>
+            )}
+
     </div>
   );
+
 }
 
 export default SearchPatient;

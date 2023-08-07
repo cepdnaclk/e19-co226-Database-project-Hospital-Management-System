@@ -1,63 +1,90 @@
 import React, { useState } from 'react'
-import './style.css'
+import './Login.css'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
+
 function Login() {
-    const [values,setValues]=useState({
-        email:'',
-        password:''
-    })
 
-    const navigate = useNavigate()
+  const [values,setValues]=useState
+({
+    email:'',
+    password:''
+})
 
-   const [error,setError] =useState('')
+const navigate = useNavigate()
 
-    const handleSubmit = (event)=>{
-        event.preventDefault();
-        axios.post('http://localhost:8081/login',values)
-        .then(res => {
-            if (res.data.Status==='success'){
-                if (res.data.Role==='Receptionist')
-                    navigate('/')
-                if (res.data.Role === 'admin')
-                    navigate('/adminDashboard')
-            }else{
-                setError(res.data.Error);
-            }
-        })
-        .catch(err => console.log(err));
-    }
-    return (
-      <div className='d-flex justify-content-center align-items-center vh-100 loginPage'>
-        
-        <div className='p-3 rounded w-25 border loginForm'>
-            <div className='text-danger'>
-                {error && <b>{error}</b>}
-            </div>
+const [error,setError] =useState('')
 
-            <h2>Login</h2>
-            <form onSubmit={handleSubmit}>
-                <div className='mb-3'>
-                    <label htmlFor='email'><strong>Email</strong></label><br></br>
-                    <input type='email' placeholder='Enter Email' name='email' 
-                    onChange={e=> setValues({...values,email:e.target.value})} className='from-control rounded-0 w-100'  />
-                </div>
+ const handleSubmit = (event)=>{
+     event.preventDefault();
+     axios.post('http://localhost:8081/login',values)
+     .then(res => {
+         if (res.data.Status==='success'){
+             if (res.data.Role==='Receptionist')
+                 navigate('/')
+             if (res.data.Role === 'admin')
+                 navigate('/DashboardAdmin')
+         }else{
+             setError(res.data.Error);
+         }
+     })
+     .catch(err => console.log(err));
+ }
 
-                <div className='mb-3'>
-                    <label htmlFor='password'><strong>Password</strong></label><br></br>
-                    <input type='password' placeholder='Enter Password' name='password' 
-                    onChange={e=> setValues({...values, password:e.target.value})}  className='from-control rounded-0 w-100'/>
-                </div>
-                <button type='submit' className='btn btn-success w-100 rounded-0'>Log in</button>
-                <p>You are agree to our terms and policies</p>
-                
-            </form>
+  
+ return (
+  <div className='logingpage'>
+    <div className='logingform'>
+      <div className='text-center text-danger mb-3'>{error && <b>{error}</b>}</div>
 
+      <h1 className='text-center mb-4'>
+        <span style={{ color: '#042e5b' }}>Medi</span>
+        <span style={{ color: 'rgba(239, 242, 246, 0.8)', backgroundColor: '#042e5b' }}>Care</span>
+      </h1>
+
+      <h2 className='text-center mb-4'>Login</h2>
+
+      <form onSubmit={handleSubmit}>
+        <div className='mb-3'>
+          <label htmlFor='email'><strong>Email</strong></label>
+          <input
+            type='email'
+            placeholder='Enter Email'
+            name='email'
+            onChange={e => setValues({ ...values, email: e.target.value })}
+            className='form-control rounded-pill'
+          />
         </div>
 
-      </div>
-    )
-}
+        <div className='mb-3'>
+          <label htmlFor='password'><strong>Password</strong></label>
+          <input
+            type='password'
+            placeholder='Enter Password'
+            name='password'
+            onChange={e => setValues({ ...values, password: e.target.value })}
+            className='form-control rounded-pill'
+          />
+        </div>
+
+        <button
+          type='submit'
+          className='btn btn-success btn-block rounded-pill'
+          style={{ backgroundColor: 'lightblue', color: '#042e5b' }}
+        >
+          <strong>Log in</strong>
+        </button>
+
+        <p className='text-center mt-3' style={{ color: '#042e5b' }}>
+          <strong>You agree to our terms and policies</strong>
+        </p>
+
+      </form>
+    </div>
+  </div>
+);
+};
+
 
 export default Login;

@@ -1,0 +1,187 @@
+.logingpage {
+  background: url('images/background1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logingform {
+  background-color: rgba(239, 242, 246, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.logingform h1 {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 34px;
+  font-weight: bold; /* Make the h1 text bold */
+}
+
+.logingform h2 {
+  text-align: center;
+  color: #042e5b;
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: bold; /* Make the h2 text bold */
+}
+
+.logingform label {
+  font-weight: bold;
+  color: #042e5b; /* Change the label text color to light blue */
+  font-size: 16px; /* Increase the label text size */
+}
+
+.logingform input[type="email"],
+.logingform input[type="password"] {
+  border: 1px solid lightblue;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 16px; /* Increase the input text size */
+  font-weight: bold; /* Make the input text bold */
+}
+
+.logingform input[type="email"]::placeholder,
+.logingform input[type="password"]::placeholder {
+  color: #999;
+  font-size: 16px; /* Increase the placeholder text size */
+  font-weight: bold; /* Make the placeholder text bold */
+}
+
+.logingform button[type="submit"] {
+  background-color: lightblue;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  color: #042e5b;
+  font-size: 18px; /* Increase the button text size */
+  font-weight: bold; /* Make the button text bold */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logingform button[type="submit"]:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.logingform p {
+  text-align: center;
+  font-weight: bold;
+  color: lightblue; /* Change the text color to light blue */
+  font-size: 18px; /* Increase the paragraph text size */
+  margin-top: 15px;
+}
+
+/* Additional styles */
+
+.logingform a {
+  color: lightblue; /* Change link text color to light blue */
+  text-decoration: none;
+  font-size: 14px; /* Increase the link text size */
+  font-weight: bold; /* Make the link text bold */
+}
+
+.logingform a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+.logingform .error-message {
+  color: red; /* Set the color for error messages */
+  font-size: 14px; /* Increase the error message text size */
+  font-weight: bold; /* Make the error message text bold */
+}
+
+
+/* Additional features */
+
+.logingform a {
+  color: lightblue; /* Change link text color to light blue */
+  text-decoration: none;
+  font-size: 14px; /* Increase the link text size */
+  font-weight: bold; /* Make the link text bold */
+}
+
+.logingform a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+.logingform .social-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logingform .social-buttons button {
+  background-color: #3b5998; /* Facebook blue */
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logingform .social-buttons button:hover {
+  background-color: #2d4373; /* Darker shade on hover */
+}
+
+.logingform .remember-me {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.logingform .remember-me label {
+  margin-left: 10px;
+  font-size: 14px;
+  color: lightblue;
+}
+
+.logingform .forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.logingform .forgot-password a {
+  font-size: 14px;
+  color: lightblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logingform .forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.logingform .signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logingform .signup-link a {
+  font-size: 16px;
+  color: lightblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logingform .signup-link a:hover {
+  text-decoration: underline;
+}

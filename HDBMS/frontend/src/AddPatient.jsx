@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './AddPatient.css';
 
-
 function AddPatient() {
+  
   const [patient, setPatient] = useState({
     P_ID: '',
     Name: '',
@@ -44,13 +44,14 @@ function AddPatient() {
     setPatient((prevState) => ({ ...prevState, [name]: value }));
   };
 
+
   return (
     <div className="add-patient-container">
-      <h4>Add New Patient</h4>
+      <h4><b>Add New Patient</b></h4>
       <form onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group ">
-            <label>P_ID:</label>
+            <label><b>Patient ID:</b></label>
             <input
               type="text"
               name="P_ID"
@@ -60,7 +61,7 @@ function AddPatient() {
             />
           </div>
           <div className="form-group ">
-            <label>Name:</label>
+            <label><b>Name:</b></label>
             <input
               type="text"
               name="Name"
@@ -72,21 +73,21 @@ function AddPatient() {
         </div>
         <div className="form-row">
           <div className="form-group ">
-            <label>Gender:</label>
+            <label><b>Gender:</b></label>
             <select
               name="Gender"
               value={patient.Gender}
               onChange={handleChange}
               className="form-control"
             >
-              <option value="">Select</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-              <option value="Other">Other</option>
+              <option value=""><b>Select</b></option>
+              <option value="Male"><b>Male</b></option>
+              <option value="Female"><b>Female</b></option>
+              <option value="Other"><b>Other</b></option>
             </select>
           </div>
           <div className="form-group">
-            <label>Contact Number:</label>
+            <label><b>Contact Number:</b></label>
             <input
               type="text"
               name="ContactNumber"
@@ -97,7 +98,7 @@ function AddPatient() {
           </div>
         </div>
         <div className="form-group">
-          <label>Address:</label>
+          <label><b>Address:</b></label>
           <textarea
             name="Address"
             value={patient.Address}
@@ -107,7 +108,7 @@ function AddPatient() {
         </div>
         <div className="form-row">
           <div className="form-group ">
-            <label>Email:</label>
+            <label><b>Email:</b></label>
             <input
               type="email"
               name="Email"
@@ -117,7 +118,7 @@ function AddPatient() {
             />
           </div>
           <div className="form-group ">
-            <label>W_Number:</label>
+            <label><b>W_Number:</b></label>
             <input
               type="text"
               name="W_Number"
@@ -128,7 +129,7 @@ function AddPatient() {
           </div>
         </div>
         <div className="form-group">
-          <label>REP_ID:</label>
+          <label><b>REP_ID:</b></label>
           <input
             type="text"
             name="REP_ID"
@@ -137,9 +138,11 @@ function AddPatient() {
             className="form-control"
           />
         </div>
-        <button type="submit" className="btn btn-primary">
-          Add Patient
+
+        <button type="submit" className="btn btn-primary" style={{ backgroundColor: '#042e5b', color: 'white' }}>
+        <b>Add Patient</b>
         </button>
+
         <div className='text-success'>
                 {message && <b>{message}</b>}
         </div>
@@ -150,4 +153,4 @@ function AddPatient() {
   );
 }
 
-export default AddPatient;
+export default AddPatient

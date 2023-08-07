@@ -1,0 +1,35 @@
+/* help.css */
+
+/* Apply light blue theme to the Help component */
+.help-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: lightblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+.help-container h2 {
+  font-weight: bold; /* Set the font weight to bold */
+}
+  
+  .detail-container {
+    margin-bottom: 10px;
+    color: #042e5b;
+  }
+  
+  .detail-container p {
+    margin: 5px 0;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .link {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  

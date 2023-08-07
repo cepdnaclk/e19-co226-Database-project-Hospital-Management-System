@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Details(){
-    return (
-        <div>ADDING Details HERE</div>
-    )
+function Details() {
+  return (
+    <div>Details</div>
+  )
 }
 
 export default Details

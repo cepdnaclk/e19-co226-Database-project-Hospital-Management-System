@@ -1,14 +1,14 @@
-import Express from "express"
+import express from "express"
 import mysql from 'mysql'
 import cors from 'cors'
 import cookieParser from "cookie-parser"
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 
-const app= Express();
+const app= express();
 app.use(cors());
 app.use(cookieParser());
-app.use(Express.json());
+app.use(express.json());
 
 const con =mysql.createConnection({
     host:"localhost",
@@ -24,6 +24,7 @@ con.connect(function(err){
         console.log("Connected");
     }
 })
+
 app.post('/login',(req,res)=>{
     const sql = "SELECT * FROM USER WHERE email = ? AND password = ?";
     con.query(sql, [req.body.email, req.body.password], (err, result) => {
@@ -54,7 +55,30 @@ app.post('/addPatient', (req, res) => {
     });
   });
 
-app.post('/addDoctor', (req, res) => {
+// API endpoint to fetch patient profile data
+app.get('/patient', (req, res) => {
+  // Assuming you have access to the logged-in patient's ID from the session or token
+  const patientId = 1; // Replace with the actual patient ID
+
+  const sql = 'SELECT * FROM patient WHERE P_ID = ?';
+  db.query(sql, [patientId], (err, result) => {
+    if (err) {
+      console.error('Error fetching patient data:', err);
+      return res.status(500).json({ error: 'Failed to fetch patient data from the database' });
+    }
+
+    if (result.length === 0) {
+      return res.status(404).json({ error: 'Patient not found' });
+    }
+
+    const patient = result[0];
+    return res.json(patient);
+  });
+});
+
+
+
+  app.post('/addDoctor', (req, res) => {
     const { DOC_ID, Name, Gender, Specialization, ContactNumber, Address, Email } = req.body;
     const sql = 'INSERT INTO Doctor (DOC_ID, Name, Gender, Specialization, ContactNumber, Address, Email) VALUES (?, ?, ?, ?, ?, ?, ?)';
     const values = [DOC_ID, Name, Gender, Specialization, ContactNumber,Address, Email];
@@ -96,12 +120,13 @@ app.post('/addReceptionist', (req, res) => {
     });
 });
 
-app.post('/searchPatient', (req, res) => {
+
+  app.post('/searchPatient', (req, res) => {
     const { searchCriteria } = req.body;
-    const sql = 'SELECT * FROM patient WHERE P_ID LIKE ? OR Email LIKE ? OR ContactNumber LIKE ?';
+    const sql = 'SELECT * FROM patient WHERE P_ID LIKE ? ';
     const searchValue = `%${searchCriteria}%`;
   
-    con.query(sql, [searchValue, searchValue, searchValue], (err, result) => {
+    con.query(sql, [searchValue], (err, result) => {
       if (err) {
         console.error('Error searching for patients:', err);
         return res.json({ Status: 'Error', Error: 'Failed to search for patients in the database.' });
@@ -113,6 +138,8 @@ app.post('/searchPatient', (req, res) => {
       }
     });
   });
+
+
   
 
 app.listen(8081, ()=>{

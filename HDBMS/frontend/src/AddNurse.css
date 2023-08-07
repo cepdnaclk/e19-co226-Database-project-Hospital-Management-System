@@ -1,0 +1,69 @@
+/* addNurse.css */
+
+.add-Nurse-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: lightblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-Nurse-container h4 {
+    text-align: center;
+    color: #042e5b;
+    font-weight: bold; /* Set the font weight to bold */
+  }
+  
+  .add-Nurse-container form {
+    margin-top: 20px;
+  }
+  
+  .add-Nurse-container label {
+    font-weight: bold;
+    color: #042e5b;
+  }
+  
+  .add-Nurse-container .form-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .add-Nurse-container .form-group {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .add-Nurse-container .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #042e5b;
+    border-radius: 5px;
+  }
+  
+  .add-Nurse-container .form-group textarea.form-control {
+    resize: vertical;
+  }
+  
+  .add-Nurse-container .btn-primary {
+    margin-top: 20px;
+    background-color: #042e5b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .add-Nurse-container .btn-primary:hover {
+    background-color: #021a3f;
+  }
+  
+  .add-Nurse-container .text-success {
+    margin-top: 10px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+  }
+  

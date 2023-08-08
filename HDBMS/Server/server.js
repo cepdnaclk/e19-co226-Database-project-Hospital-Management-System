@@ -139,6 +139,51 @@ app.post('/addReceptionist', (req, res) => {
     });
   });
 
+  app.get('/getPatientCount', (req, res) => {
+    const sql = 'SELECT COUNT(*) AS count FROM patient';
+    con.query(sql, (err, result) => {
+        if (err) {
+            console.error('Error fetching patient count:', err);
+            return res.json({ Status: 'Error', Error: 'Failed to fetch patient count from the database.' });
+        }
+        return res.json({ Status: 'Success', count: result[0].count });
+    });
+});
+
+app.get('/getReceptionistCount', (req, res) => {
+  const sql = 'SELECT COUNT(*) AS count FROM Receptionist';
+  con.query(sql, (err, result) => {
+      if (err) {
+          console.error('Error fetching receptionist count:', err);
+          return res.json({ Status: 'Error', Error: 'Failed to fetch receptionist count from the database.' });
+      }
+      return res.json({ Status: 'Success', count: result[0].count });
+  });
+});
+
+app.get('/getDoctorCount', (req, res) => {
+  const sql = 'SELECT COUNT(*) AS count FROM Doctor';
+  con.query(sql, (err, result) => {
+      if (err) {
+          console.error('Error fetching doctor count:', err);
+          return res.json({ Status: 'Error', Error: 'Failed to fetch doctor count from the database.' });
+      }
+      return res.json({ Status: 'Success', count: result[0].count });
+  });
+});
+
+app.get('/getNurseCount', (req, res) => {
+  const sql = 'SELECT COUNT(*) AS count FROM Nurse';
+  con.query(sql, (err, result) => {
+      if (err) {
+          console.error('Error fetching nurse count:', err);
+          return res.json({ Status: 'Error', Error: 'Failed to fetch nurse count from the database.' });
+      }
+      return res.json({ Status: 'Success', count: result[0].count });
+  });
+});
+
+
 
   
 

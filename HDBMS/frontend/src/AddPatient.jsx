@@ -11,7 +11,7 @@ function AddPatient() {
     ContactNumber: '',
     Address: '',
     Email: '',
-    W_Number: '',
+    R_Number: '',
     REP_ID: '',
   });
 
@@ -27,8 +27,7 @@ function AddPatient() {
       .then((response) => {
         console.log(response.data);
         if (response.data.Status === 'Success') {
-          setMessage('Patient added successfully.');
-          
+          setMessage('Patient added successfully.');  
         } else {
           setMessage(response.data.Error);
         }
@@ -96,6 +95,7 @@ function AddPatient() {
               className="form-control"
             />
           </div>
+        
         </div>
         <div className="form-group">
           <label><b>Address:</b></label>
@@ -118,11 +118,11 @@ function AddPatient() {
             />
           </div>
           <div className="form-group ">
-            <label><b>W_Number:</b></label>
+            <label><b>R_Number:</b></label>
             <input
               type="text"
-              name="W_Number"
-              value={patient.W_Number}
+              name="R_Number"
+              value={patient.R_Number}
               onChange={handleChange}
               className="form-control"
             />

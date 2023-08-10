@@ -13,6 +13,7 @@
 .add-patient-container h4 {
   text-align: center;
   color: #042e5b;
+  font-weight: bold;
 }
 
 .add-patient-container form {
@@ -20,6 +21,7 @@
 }
 
 .add-patient-container label {
+  font-weight: bold;
   color: #042e5b;
 }
 

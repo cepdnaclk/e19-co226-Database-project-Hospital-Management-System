@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './addReceptionist.css'; // Import the CSS file for styles
+import './AddReceptionist.css'; // Import the CSS file for styles
 
 
 function AddReceptionist() {

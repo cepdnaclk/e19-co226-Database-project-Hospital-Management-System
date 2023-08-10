@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './details.css';
+import './Details.css';
 
 function Details() {
   const [patientCount, setPatientCount] = useState(0);

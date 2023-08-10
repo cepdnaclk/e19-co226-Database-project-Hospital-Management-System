@@ -1,6 +1,4 @@
-/* addPatient.css */
-
-.add-patient-container {
+.treat-deatail-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
@@ -10,43 +8,43 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.add-patient-container h4 {
+.treat-deatail-container h4 {
   text-align: center;
   color: #042e5b;
   font-weight: bold;
 }
 
-.add-patient-container form {
+.treat-deatail-container form {
   margin-top: 20px;
 }
 
-.add-patient-container label {
+.treat-deatail-container label {
   font-weight: bold;
   color: #042e5b;
 }
 
-.add-patient-container .form-row {
+.treat-deatail-container .form-row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.add-patient-container .form-group {
+.treat-deatail-container .form-group {
   flex: 1;
   margin: 10px;
 }
 
-.add-patient-container .form-control {
+.treat-deatail-container .form-control {
   width: 100%;
   padding: 10px;
   border: 1px solid #042e5b;
   border-radius: 5px;
 }
 
-.add-patient-container .form-group textarea.form-control {
+.treat-deatail-container .form-group textarea.form-control {
   resize: vertical;
 }
 
-.add-patient-container .btn-primary {
+.treat-deatail-container .btn-primary {
   margin-top: 20px;
   background-color: #042e5b;
   color: #fff;
@@ -56,11 +54,11 @@
   cursor: pointer;
 }
 
-.add-patient-container .btn-primary:hover {
+.treat-deatail-container .btn-primary:hover {
   background-color: #021a3f;
 }
 
-.add-patient-container .text-success {
+.treat-deatail-container .text-success {
   margin-top: 10px;
   text-align: center;
   color: green;

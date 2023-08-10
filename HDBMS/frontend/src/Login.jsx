@@ -23,8 +23,10 @@ const [error,setError] =useState('')
          if (res.data.Status==='success'){
              if (res.data.Role==='Receptionist')
                  navigate('/')
-             if (res.data.Role === 'admin')
+             else if (res.data.Role === 'admin')
                  navigate('/DashboardAdmin')
+             else if (res.data.Role === 'nurse' || res.data.Role === 'doctor')
+                 navigate('/DashboardTreat');            
          }else{
              setError(res.data.Error);
          }

@@ -46,9 +46,9 @@ function SearchPatient() {
             <p>Name: {patient.Name}</p>
             <p>Gender: {patient.Gender}</p>
             <p>ContactNumber: {patient.ContactNumber}</p>
-            <p>Adress: {patient.Adress}</p>
+            <p>Adress: {patient.Address}</p>
             <p>Email: {patient.Email}</p>
-            <p>Ward Number: {patient.W_number}</p>
+            <p>Room Number: {patient.R_Number}</p>
             <p>Resp Number: {patient.REP_ID}</p>
             {/* Add other patient details here */}
             <hr />

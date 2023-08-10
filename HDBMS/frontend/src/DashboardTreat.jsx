@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom"
 import { useState } from 'react';
 
 
-function DashboardAdmin(){
+function DashboardTreat(){
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
     const handleSidebarToggle = () => {
@@ -27,33 +27,29 @@ function DashboardAdmin(){
 
                 {/* Sidebar Navigation */}
                 <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
-                    {/* Add Patient */}
-                    <li>
-                        <Link to="/DashboardAdmin" className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-person-plus" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }} ><b>Add Doctor</b></span>
-                        </Link>
-                    </li>
+                    {/* Add Treat Details */}
                     
                     <li>
-                        <Link to='/DashboardAdmin/addNurse' className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-person-plus" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Add Nurse</b></span>
+                        <Link to='/DashboardTreat' className="nav-link px-0 align-middle">
+                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Diagnose Detils</b></span>
                         </Link>
                     </li>
                     <li>
-                        <Link to='/DashboardAdmin/addReceptionist' className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-person-plus" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Add Recep</b></span>
+                        <Link to='/DashboardTreat/Treat' className="nav-link px-0 align-middle">
+                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Treat Details</b></span>
                         </Link>
                     </li>
                     <li>
-                        <Link to='/DashboardAdmin/Details' className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Details</b></span>
+                        <Link to='/DashboardTreat/Room' className="nav-link px-0 align-middle">
+                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Rooms Details</b></span>
                         </Link>
                     </li>
                     <li>
-                        <Link to='/DashboardAdmin/Help' className="nav-link px-0 align-middle">
+                        <Link to='/DashboardTreat/Help' className="nav-link px-0 align-middle">
                             <i className="fs-4 bi-book" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Help</b></span>               
                         </Link>
                     </li>
+                    
                     <li>
                         <Link to='/Login' className="nav-link px-0 align-middle">
                              <i className="fs-4 bi-power" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Logout</b></span>
@@ -71,7 +67,7 @@ function DashboardAdmin(){
 
           {/* Content area */}
           <div className="p-3 d-flex justify-content-center " >
-            <h3 className="text-lightblue" style={{ color: '#042e5b', fontSize: '40px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }} ><b>ADMINISTRATOR MANAGEMNT</b></h3>
+            <h3 className="text-lightblue" style={{ color: '#042e5b', fontSize: '40px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }} ><b>TREAT MANAGEMNT</b></h3>
           </div>
           <Outlet />
         </div>
@@ -83,4 +79,4 @@ function DashboardAdmin(){
     )
 }
 
-export default DashboardAdmin
+export default DashboardTreat

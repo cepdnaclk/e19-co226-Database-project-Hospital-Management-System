@@ -28,23 +28,23 @@ return (
               {/* Add Patient */}
               <li>
                 <Link to="/rep" className="nav-link px-0 align-middle">
-                  <i className="fs-4 bi-person-plus" style={{ color: ' #042e5b',backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline text-#042e5b" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Add Patient </b></span>
+                  <i className="fs-4 bi-person-plus" style={{ color: ' #042e5b',backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-2 d-none d-sm-inline" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Add Patient </b></span>
                 </Link>
               </li>
 
               <li>
                 <Link to='/rep/searchPatient' className="nav-link px-0 align-middle">
-                  <i className="fs-4 bi-search" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline text-#042e5b" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Search Patient</b></span>
+                  <i className="fs-4 bi-search" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-2 d-none d-sm-inline " style={{ color: ' #042e5b', fontSize: '18px' }}><b>Search Patient</b></span>
                 </Link>
               </li>
               <li>
                 <Link to='/rep/Help' className="nav-link px-0 align-middle">
-                <i className="fs-4 bi-book" style={{ color: ' #042e5b',backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline text-#042e5b" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Help</b></span>               
+                <i className="fs-4 bi-book" style={{ color: ' #042e5b',backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-2 d-none d-sm-inline " style={{ color: ' #042e5b', fontSize: '18px' }}><b>Help</b></span>               
                 </Link>
               </li>
               <li>
                 <Link to='/' className="nav-link px-0 align-middle">
-                  <i className="fs-4 bi-power" style={{ color: ' #042e5b',backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline text-#042e5b" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Logout</b></span>
+                  <i className="fs-4 bi-power" style={{ color: ' #042e5b',backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-2 d-none d-sm-inline" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Logout</b></span>
                 </Link>
               </li>
             </ul>

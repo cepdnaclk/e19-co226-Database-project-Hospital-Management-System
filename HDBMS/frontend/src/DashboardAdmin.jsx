@@ -56,6 +56,7 @@ function DashboardAdmin(){
               </li>
             </ul>
 
+       
             </div>
         </div>
         <div className="col py-3 position-relative">
@@ -66,16 +67,13 @@ function DashboardAdmin(){
 
           {/* Content area */}
           <div className="p-3 d-flex justify-content-center " >
-            <h3 className="text-lightblue" style={{ color: '#042e5b', fontSize: '40px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }} ><b>ADMINISTRATOR MANAGEMNT</b></h3>
+            <h3 className="text-lightblue" style={{ color: '#042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }} ><b>PATIENT MANAGEMENT</b></h3>
           </div>
           <Outlet />
         </div>
+      </div>
     </div>
-</div>
-
-
- 
-    )
+  );
 }
 
 export default DashboardAdmin

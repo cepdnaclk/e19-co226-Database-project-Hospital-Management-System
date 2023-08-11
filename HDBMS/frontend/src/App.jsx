@@ -25,6 +25,7 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
+      <Route path='/' element={<Login />}></Route>
       
       <Route path='/DashboardAdmin' element={<DashboardAdmin/>}>
         <Route path='' element={<AddDoctor/>}></Route>
@@ -41,15 +42,13 @@ function App() {
         <Route path='/DashboardTreat/Help' element={<Help/>}></Route>    
       </Route>
 
-      <Route path ='/' element={<DashboardRecpt />}>
-        <Route path='' element={<AddPatient/>}></Route>
-        <Route path='/searchPatient' element={<SearchPatient/>}></Route>
-        <Route path='/Help' element={<Help/>}></Route>
+      <Route path ='/rep' element={<DashboardRecpt />}>
+        <Route path='/rep/' element={<AddPatient/>}></Route>
+        <Route path='/rep/searchPatient' element={<SearchPatient/>}></Route>
+        <Route path='/rep/Help' element={<Help/>}></Route>
       </Route>
 
-      
-      
-      <Route path='/login' element={<Login />}></Route>
+    
     </Routes>
     </BrowserRouter>
   )

@@ -55,7 +55,7 @@ function DashboardAdmin(){
                         </Link>
                     </li>
                     <li>
-                        <Link to='/Login' className="nav-link px-0 align-middle">
+                        <Link to='/' className="nav-link px-0 align-middle">
                              <i className="fs-4 bi-power" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline text-#042e5b" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Logout</b></span>
                         </Link>
                     </li>

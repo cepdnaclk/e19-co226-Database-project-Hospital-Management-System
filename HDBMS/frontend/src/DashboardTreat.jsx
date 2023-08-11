@@ -31,28 +31,28 @@ function DashboardTreat(){
                     
                     <li>
                         <Link to='/DashboardTreat' className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Diagnose Detils</b></span>
+                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Diagnose Detils</b></span>
                         </Link>
                     </li>
                     <li>
                         <Link to='/DashboardTreat/Treat' className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Treat Details</b></span>
+                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Treat Details</b></span>
                         </Link>
                     </li>
                     <li>
                         <Link to='/DashboardTreat/Room' className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Rooms Details</b></span>
+                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Rooms Details</b></span>
                         </Link>
                     </li>
                     <li>
                         <Link to='/DashboardTreat/Help' className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-book" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Help</b></span>               
+                            <i className="fs-4 bi-book" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Help</b></span>               
                         </Link>
                     </li>
                     
                     <li>
-                        <Link to='/Login' className="nav-link px-0 align-middle">
-                             <i className="fs-4 bi-power" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Logout</b></span>
+                        <Link to='/' className="nav-link px-0 align-middle">
+                             <i className="fs-4 bi-power" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Logout</b></span>
                         </Link>
                     </li>
                 </ul>
@@ -67,7 +67,7 @@ function DashboardTreat(){
 
           {/* Content area */}
           <div className="p-3 d-flex justify-content-center " >
-            <h3 className="text-lightblue" style={{ color: '#042e5b', fontSize: '40px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }} ><b>TREAT MANAGEMNT</b></h3>
+            <h3 className="text-lightblue" style={{ color: '#042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}  ><b>TREAT MANAGEMNT</b></h3>
           </div>
           <Outlet />
         </div>

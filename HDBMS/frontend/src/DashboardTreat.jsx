@@ -12,7 +12,7 @@ function DashboardTreat(){
   };
   
   return (
-      <div className={`container-fluid ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`} style={{ backgroundImage: "url('images/background1.jpg')", backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+      <div className={`container-fluid ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`} style={{ backgroundImage: "url('images/loginBackground.jpg')", backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
         <div className="row">
           {/* Sidebar */}
           <div className="col-auto col-md-4 col-xl-2 px-sm-2 px-0 bg-lightblue sidebar" style={{ backgroundColor: 'lightblue' }}>
@@ -31,7 +31,7 @@ function DashboardTreat(){
                     
                     <li>
                         <Link to='/DashboardTreat' className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Diagnose Detils</b></span>
+                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Diagnose Details</b></span>
                         </Link>
                     </li>
                     <li>

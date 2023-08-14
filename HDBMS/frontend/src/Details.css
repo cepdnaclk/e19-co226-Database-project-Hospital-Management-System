@@ -5,7 +5,7 @@
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    background-color: lightblue;
+    background-color: rgb(173, 216, 230,0.7);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
   }

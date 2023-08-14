@@ -12,15 +12,15 @@ function DashboardTreat(){
   };
   
   return (
-      <div className={`container-fluid ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`} style={{ backgroundImage: "url('images/background1.jpg')", backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+      <div className={`container-fluid ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`} style={{ backgroundImage: "url('images/loginBackground.jpg')", backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
         <div className="row">
           {/* Sidebar */}
           <div className="col-auto col-md-4 col-xl-2 px-sm-2 px-0 bg-lightblue sidebar" style={{ backgroundColor: 'lightblue' }}>
-            <div className="d-flex flex-column align-items-start px-3 pt-2 text-white min-vh-100">
+            <div className="d-flex flex-column align-items-start px-3 pt-2  min-vh-100">
               {/* Menu Link */}
-              <div className="d-flex align-items-center pb-3 mb-md-1 me-md-auto text-white text-decoration-none ">
+              <div className="d-flex align-items-center pb-3 mb-md-1 me-md-auto" style={{ color: '#042e5b' }}>
                 <span className="fs-5 d-none d-sm-inline" ><b>Menu</b></span>
-                <button className="btn btn-link text-white d-sm-none"  onClick={handleSidebarToggle}>
+                <button className="btn btn-link d-sm-none"  onClick={handleSidebarToggle}>
                   <i className="bi bi-x"></i>
                 </button>
               </div>
@@ -31,28 +31,28 @@ function DashboardTreat(){
                     
                     <li>
                         <Link to='/DashboardTreat' className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Diagnose Detils</b></span>
+                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Diagnose Details</b></span>
                         </Link>
                     </li>
                     <li>
                         <Link to='/DashboardTreat/Treat' className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Treat Details</b></span>
+                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Treat Details</b></span>
                         </Link>
                     </li>
                     <li>
                         <Link to='/DashboardTreat/Room' className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Rooms Details</b></span>
+                            <i className="fs-4 bi-info-circle" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Rooms Details</b></span>
                         </Link>
                     </li>
                     <li>
                         <Link to='/DashboardTreat/Help' className="nav-link px-0 align-middle">
-                            <i className="fs-4 bi-book" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Help</b></span>               
+                            <i className="fs-4 bi-book" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline " style={{ color: ' #042e5b', fontSize: '18px' }}><b>Help</b></span>               
                         </Link>
                     </li>
                     
                     <li>
-                        <Link to='/Login' className="nav-link px-0 align-middle">
-                             <i className="fs-4 bi-power" style={{ color: ' #042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}></i> <span className="ms-1 d-none d-sm-inline text-white" style={{ color: ' #042e5b', fontSize: '25px' }}><b>Logout</b></span>
+                        <Link to='/' className="nav-link px-0 align-middle">
+                             <i className="fs-4 bi-power" style={{ color: ' #042e5b', backgroundColor: 'white', padding: '2px', borderRadius: '20px' }}></i> <span className="ms-1 d-none d-sm-inline" style={{ color: ' #042e5b', fontSize: '18px' }}><b>Logout</b></span>
                         </Link>
                     </li>
                 </ul>
@@ -67,7 +67,7 @@ function DashboardTreat(){
 
           {/* Content area */}
           <div className="p-3 d-flex justify-content-center " >
-            <h3 className="text-lightblue" style={{ color: '#042e5b', fontSize: '40px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }} ><b>TREAT MANAGEMNT</b></h3>
+            <h3 className="text-lightblue" style={{ color: '#042e5b', fontSize: '30px', backgroundColor: 'white', padding: '5px', borderRadius: '5px' }}  ><b>TREAT MANAGEMNT</b></h3>
           </div>
           <Outlet />
         </div>

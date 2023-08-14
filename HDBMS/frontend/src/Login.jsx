@@ -18,11 +18,11 @@ const [error,setError] =useState('')
 
  const handleSubmit = (event)=>{
      event.preventDefault();
-     axios.post('http://localhost:8081/login',values)
+     axios.post('http://localhost:8081/Login',values)
      .then(res => {
          if (res.data.Status==='success'){
              if (res.data.Role==='Receptionist')
-                 navigate('/')
+                 navigate('/rep')
              else if (res.data.Role === 'admin')
                  navigate('/DashboardAdmin')
              else if (res.data.Role === 'nurse' || res.data.Role === 'doctor')

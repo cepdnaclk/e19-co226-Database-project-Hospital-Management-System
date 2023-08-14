@@ -6,14 +6,13 @@
   padding: 20px;
   border: 1px solid lightblue;
   border-radius: 10px;
-  background-color: lightblue;
+  background-color: rgb(173, 216, 230,0.6);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .add-patient-container h4 {
   text-align: center;
   color: #042e5b;
-  font-weight: bold;
 }
 
 .add-patient-container form {
@@ -21,7 +20,7 @@
 }
 
 .add-patient-container label {
-  font-weight: bold;
+ 
   color: #042e5b;
 }
 

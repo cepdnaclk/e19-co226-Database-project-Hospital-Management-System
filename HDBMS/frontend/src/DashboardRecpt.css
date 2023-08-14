@@ -1,0 +1,27 @@
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .nav-link i {
+    font-size: 1.5rem;
+    color: #042e5b;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .nav-link span {
+    color: #042e5b;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  

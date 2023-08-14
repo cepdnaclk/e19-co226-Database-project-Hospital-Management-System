@@ -45,11 +45,11 @@ function AddDoctor() {
 
   return (
     <div className="add-Doctor-container">
-      <h4>Add new Doctor</h4>
+      <h4>Add New Doctor</h4>
       <form onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group ">
-            <label>DOC_ID:</label>
+            <label>Docotor ID:</label>
             <input
               type="text"
               name="DOC_ID"

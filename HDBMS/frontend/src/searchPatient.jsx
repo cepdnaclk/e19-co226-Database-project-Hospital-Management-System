@@ -49,7 +49,7 @@ function SearchPatient() {
             <p>Adress: {patient.Address}</p>
             <p>Email: {patient.Email}</p>
             <p>Room Number: {patient.R_Number}</p>
-            <p>Resp Number: {patient.REP_ID}</p>
+            <p>Receptionist Number: {patient.REP_ID}</p>
             {/* Add other patient details here */}
             <hr />
           </div>

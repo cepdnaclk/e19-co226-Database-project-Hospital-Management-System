@@ -5,10 +5,9 @@ function Help() {
   return (
     <div className="help-container">
     <h2 className='text mb-4'>
-         <span style={{ color: '#042e5b'}}>Hospital </span>
          <span style={{ color: '#042e5b' ,backgroundColor: 'white'}}>Medi</span>
          <span style={{ color: 'white', backgroundColor: ' #042e5b' }}>Care</span>
-         <span style={{ color: '#042e5b'}}> Details</span>
+         <span style={{ color: '#042e5b'}}>  Hospital </span>
     </h2>
       <div className="detail-container">
         <p>
@@ -17,7 +16,7 @@ function Help() {
       </div>
       <div className="detail-container">
         <p className="label">Our Address:</p>
-        <p>123 Medical Street, City, Country</p>
+        <p>123 Medical Street, Kandy, Sri Lanka</p>
       </div>
       <div className="detail-container">
         <p className="label">Contact Number:</p>

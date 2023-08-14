@@ -43,7 +43,7 @@ function AddReceptionist() {
 
   return (
     <div className="add-Receptionist-container">
-      <h4>Add new Receptionist </h4>
+      <h4>Add New Receptionist </h4>
       <form onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group ">

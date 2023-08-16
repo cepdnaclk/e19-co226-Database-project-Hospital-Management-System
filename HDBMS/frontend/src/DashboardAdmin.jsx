@@ -2,6 +2,8 @@ import React from 'react'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { Link, Outlet } from "react-router-dom"
 import { useState } from 'react';
+import './DashboardAdmin.css'; // Import the CSS file for styles
+
 
 
 function DashboardAdmin(){
@@ -12,13 +14,13 @@ function DashboardAdmin(){
   };
   
   return (
-      <div className={`container-fluid ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`} style={{ backgroundImage: "url('images/background1.jpg')", backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+      <div className={`container-fluid ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`} style={{ backgroundImage: "url('images/admin.jpg')", backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
         <div className="row">
           {/* Sidebar */}
           <div className="col-auto col-md-5 col-xl-2 px-sm-2 px-0 bg-lightblue sidebar" style={{ backgroundColor: 'lightblue' }}>
             <div className="d-flex flex-column align-items-start px-3 pt-2 min-vh-100">
               {/* Menu Link */}
-              <div className="d-flex align-items-center pb-3 mb-md-1 me-md-auto" style={{ color: '#042e5b' }}>
+              <div className="d-flex align-items-center pb-3 mb-md-1 me-md-auto" style={{ color: 'white', fontSize: '30px' }}>
                 <span className="fs-5 d-none d-sm-inline" ><b>Menu</b></span>
                 <button className="btn btn-link d-sm-none"  onClick={handleSidebarToggle}>
                   <i className="bi bi-x"></i>

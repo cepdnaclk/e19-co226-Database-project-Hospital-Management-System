@@ -118,7 +118,7 @@ function AddPatient() {
             />
           </div>
           <div className="form-group ">
-            <label><b>R_Number:</b></label>
+            <label><b>Room Number:</b></label>
             <input
               type="text"
               name="R_Number"
@@ -129,7 +129,7 @@ function AddPatient() {
           </div>
         </div>
         <div className="form-group">
-          <label><b>REP_ID:</b></label>
+          <label><b>Receptionist ID:</b></label>
           <input
             type="text"
             name="REP_ID"

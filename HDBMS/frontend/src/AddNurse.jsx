@@ -43,11 +43,11 @@ function AddNurse() {
 
   return (
     <div className="add-Nurse-container">
-      <h4>Add new Nurse</h4>
+      <h4>Add New Nurse</h4>
       <form onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group ">
-            <label>NR_ID:</label>
+            <label>Nurse ID:</label>
             <input
               type="text"
               name="NR_ID"

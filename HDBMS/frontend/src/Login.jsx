@@ -42,7 +42,7 @@ const [error,setError] =useState('')
 
       <h1 className='text-center mb-4'>
         <span style={{ color: '#042e5b' }}>Medi</span>
-        <span style={{ color: 'rgba(239, 242, 246, 0.8)', backgroundColor: '#042e5b' }}>Care</span>
+        <span style={{ color: 'white', backgroundColor: '#042e5b' }}>Care</span>
       </h1>
 
       <h2 className='text-center mb-4'>Login</h2>

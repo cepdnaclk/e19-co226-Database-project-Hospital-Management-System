@@ -1,0 +1,31 @@
+{
+    "team": [
+        {
+            "name": "Kumara I.P.S.N.U.",
+            "email": "e19205@eng.pdn.ac.lk",
+            "eNumber": "E/19/205"
+        },
+        {
+            "name": "Kumarasiri R.P.J.R.",
+            "email": "e19210@eng.pdn.ac.lk",
+            "eNumber": "E/19/210"
+        },
+        {
+            "name": "Kaushalya N.V.K.",
+            "email": "e19192@eng.pdn.ac.lk",
+            "eNumber": "E/19/193"
+        },
+        {
+            "name": "Kaushalya N.V.K.",
+            "email": "e19193@eng.pdn.ac.lk",
+            "eNumber": "E/19/193"
+        }
+    ],
+    "supervisors": [
+        {
+            "name": "Damitha Senevirathne",
+            "email": "damithas@eng.pdn.ac.lk"
+        }
+    ],
+    "tags": ["Online Hospital Managment System"]
+}

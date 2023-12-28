@@ -1,19 +1,4 @@
 # Project Hospital Management System
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-  - [Home Page](#home-page)
-  - [Administor Management Page](#administor-management-page)
-  - [Treat Management Page](#treat-managemnet-page)
-  - [Patient Management Page](#patient-managemnet-page)
-  - [Help](#help)
-  - [User Authentication](#user-authentication)
-  - [User Profile](#user-profile)
-  - [Admin Panel](#admin-panel)
-  - [Database Schema](#database-schema)
-- [Contributors](#contributors)
-
 
 ## Introduction
 
@@ -63,14 +48,10 @@ Introducing "MediCare Hospital Management System" – your trusted partner in re
 
 The Hospital Management System uses a MySQL database to manage various aspects of the platform.
 
-## Team
-
-- E/19/205 Kumara I.P.S.N.U. [email](#e19205@eng.pdn.ac.lk)
-- E/19/210 Kumarasiri R.P.J.R. [email](#e19210@eng.pdn.ac.lk)
-- E/19/193 Kaushalya N.V.K. [email](#e19193@eng.pdn.ac.lk)
-
-
+## Implementation
 ![1](https://github.com/Kaushalya193/226-Database-project-Hospital-Management-System/assets/115540141/bda5c496-626f-4b19-a20c-451549698c29)
+![2](https://github.com/Kaushalya193/226-Database-project-Hospital-Management-System/assets/115540141/471e3048-083c-4a4e-a0e5-e8a9d9c5f8aa)
+![3](https://github.com/Kaushalya193/226-Database-project-Hospital-Management-System/assets/115540141/7b9f2e04-22f9-4437-b608-3e7605bc4637)
 
 
 

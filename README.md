@@ -69,8 +69,8 @@ The Hospital Management System uses a MySQL database to manage various aspects o
 - E/19/210 Kumarasiri R.P.J.R. [email](#e19210@eng.pdn.ac.lk)
 - E/19/193 Kaushalya N.V.K. [email](#e19193@eng.pdn.ac.lk)
 
-#
-- Thank you for selecting our Hospital Management System. We're excited to collaborate with your healthcare institution to enhance operational efficiency and elevate patient care. Should you have any questions or insights to share, please feel free to get in touch. Wishing you smooth management and excellent patient outcomes!
+
+![1](https://github.com/Kaushalya193/226-Database-project-Hospital-Management-System/assets/115540141/bda5c496-626f-4b19-a20c-451549698c29)
 
 
 

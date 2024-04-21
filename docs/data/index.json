@@ -20,6 +20,14 @@
         {
             "name": "Damitha Senevirathne",
             "email": "damithas@eng.pdn.ac.lk"
+        },
+        {
+            "name": "Dr. Manjula Sandirigama",
+            "email": "manjula.sandirigama@eng.pdn.ac.lk"
+        },
+        {
+            "name": "Dr. Eng. Kamalanath Samarakoon",
+            "email": "kamalanath@eng.pdn.ac.lk"
         }
     ],
     "tags": ["Online Hospital Database Managment System"]

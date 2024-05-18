@@ -48,6 +48,21 @@ Introducing "MediCare Hospital Management System" – your trusted partner in re
 
 The Hospital Management System uses a MySQL database to manage various aspects of the platform.
 
+## Technological Stack
+
+### Frontend:
+- **React.js**: For building a dynamic and responsive user interface.
+- **HTML, CSS, JavaScript**: Core technologies for web development.
+- **Bootstrap**: For responsive design and pre-designed UI components.
+
+### Backend:
+- **Node.js with Express**: For server-side development and handling API requests.
+- **MySQL**: For relational database management and structured data handling.
+- **XAMPP**: For a local development environment including Apache and MySQL.
+
+### Version Control:
+- **GitHub**: For version control, collaboration, and code management.
+
 ## Implementation
 ![1](https://github.com/Kaushalya193/226-Database-project-Hospital-Management-System/assets/115540141/bda5c496-626f-4b19-a20c-451549698c29)
 ![2](https://github.com/Kaushalya193/226-Database-project-Hospital-Management-System/assets/115540141/471e3048-083c-4a4e-a0e5-e8a9d9c5f8aa)
